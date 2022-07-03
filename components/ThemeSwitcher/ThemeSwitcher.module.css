@@ -1,0 +1,105 @@
+.theme-switchers {
+    display: flex;
+    gap: 12px;
+}
+
+.theme-switcher {
+    min-width: 175px;
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 22px;
+
+    border: none;
+    background-color: transparent;
+
+    filter: blur(2px);
+
+    cursor: pointer;
+}
+
+.active-theme-switcher   {
+    padding: 0 8px 2px 8px;
+    margin: 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 99px;
+
+    transition: filter 1s;
+    filter: blur(0);
+}
+
+.light::before {
+    content: 'светлая тема';
+}
+
+.dark::before {
+    content: 'тёмная тема';
+}
+
+@media (min-width: 786px) and (max-width: 1200px) {
+    .theme-switcher {
+        min-width: 24px;
+        padding: 0;
+    }
+
+    .active-theme-switcher {
+        min-width: 24px;
+        padding: 2px;
+
+        line-height: 18px;
+
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .light::before {
+        content: url("../../public/assets/icons/sun.svg");
+    }
+
+    .dark::before {
+        content: url("../../public/assets/icons/night.svg");
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .theme-switchers {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 24px;
+
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: black;
+    }
+
+    .theme-switcher {
+        min-width: 80%;
+        padding: 0;
+
+        font-size: 28px;
+        line-height: 24px;
+
+        border: none;
+        background-color: transparent;
+
+        filter: blur(2px);
+
+        cursor: pointer;
+    }
+
+    .active-theme-switcher {
+        padding: 0 8px 4px 8px;
+        margin: 0;
+
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 99px;
+
+        transition: filter 1s;
+        filter: blur(0);
+    }
+}

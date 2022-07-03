@@ -1,0 +1,19 @@
+.container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.main-content {
+    position: relative;
+
+    transition: 0.5s;
+}
+
+.active-main-content {
+    padding-left: 10vw;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transform: translateX(85%);
+}
+
+
