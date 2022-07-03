@@ -1,6 +1,6 @@
 export enum DEVICE_SIZE {
     DESKTOP = 1440,
-    LAPTOP = 786,
+    LAPTOP = 768,
     MOBILE = 320,
 }
 

@@ -39,7 +39,7 @@
     content: 'тёмная тема';
 }
 
-@media (min-width: 786px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .theme-switcher {
         min-width: 24px;
         padding: 0;
@@ -64,7 +64,7 @@
     }
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 767px) {
     .theme-switchers {
         flex-wrap: wrap;
         justify-content: center;
