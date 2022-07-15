@@ -1,0 +1,13 @@
+.review-svg {
+    width: 100px;
+    height: 100px;
+
+    padding-bottom: 16px;
+    padding-right: 10px;
+
+    border-bottom: 1px solid black;
+}
+
+.dark {
+    border-color: white;
+}

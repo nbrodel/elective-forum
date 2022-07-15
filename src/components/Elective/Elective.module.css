@@ -1,0 +1,99 @@
+.card {
+    border: 2px solid black;
+    border-radius: 12px;
+
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 22%);
+    transform: translateY(-10px);
+
+}
+
+.card.dark {
+    border-color: white;
+}
+
+.card__description {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid black;
+}
+
+.card__description.dark {
+    border-bottom-color: white;
+}
+
+.card__description-title {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.card__description-text {
+    margin-top: 12px;
+}
+
+.card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.card__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 24px;
+}
+
+.card__authors {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__authors-title {
+    font-weight: 700;
+}
+
+.card__author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.card__author-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card__minor {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 8px;
+
+    background-color: black;
+    border: 1px solid black;
+
+    color: white;
+    font-size: 12px;
+}
+
+.card__minor span {
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.card__minor.dark {
+    background-color: white;
+    color: black;
+}

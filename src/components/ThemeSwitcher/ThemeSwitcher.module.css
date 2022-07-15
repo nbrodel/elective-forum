@@ -1,0 +1,84 @@
+.theme-switchers {
+    display: flex;
+    gap: 12px;
+}
+
+.theme-switcher {
+    min-width: 175px;
+    padding: 0;
+
+    font-size: 24px;
+    line-height: 22px;
+
+    border: none;
+    background-color: transparent;
+
+    filter: blur(2px);
+
+    cursor: pointer;
+}
+
+.active-theme-switcher   {
+    padding: 0 8px 2px 8px;
+    margin: 0;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 99px;
+
+    transition: filter 1s;
+    filter: blur(0);
+}
+
+.dark {
+    color: white;
+    border-color: white;
+}
+
+.light-theme::before {
+    content: 'светлая тема';
+}
+
+.dark-theme::before {
+    content: 'тёмная тема';
+}
+
+@media (max-width: 1200px) {
+    .theme-switcher {
+        min-width: 24px;
+        padding: 0;
+    }
+
+    .active-theme-switcher {
+        min-width: 24px;
+        padding: 2px;
+
+        line-height: 18px;
+
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .dark {
+        border-color: white;
+    }
+
+    .light-theme::before {
+        content: url("../../../public/icons/sun.svg");
+    }
+
+    .dark-theme::before {
+        content: url("../../../public/icons/night.svg");
+    }
+
+    .dark.light-theme::before {
+        content: url("../../../public/icons/white-sun.svg");
+    }
+
+    .dark.dark-theme::before {
+        content: url("../../../public/icons/white-night.svg");
+    }
+}
+
+

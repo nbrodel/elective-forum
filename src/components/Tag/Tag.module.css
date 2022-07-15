@@ -1,0 +1,40 @@
+.tag {
+    max-width: 329px;
+    padding: 8px 12px;
+
+    background-color: transparent;
+
+    border: 1px solid black;
+    border-radius: 100px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.tag.active {
+    background-color: black;
+    color: white;
+}
+
+.tag:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.6s;
+}
+
+.dark {
+    color: white;
+    border-color: white;
+}
+
+.tag.active.dark {
+    background-color: white;
+    color: black;
+}
+
+.tag.dark:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.6s;
+}

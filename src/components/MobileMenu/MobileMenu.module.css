@@ -1,0 +1,31 @@
+.menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+
+  width: 70vw;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+  transform: translateX(-120%);
+  transition: 0.3s;
+}
+
+.active-menu {
+  transform: translateX(0%);
+  transition: transform 0.5s;
+}
+
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-top: 2rem;
+}

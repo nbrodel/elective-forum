@@ -1,0 +1,31 @@
+.main__description-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-svg {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 1440px) {
+    .profile-svg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .profile-svg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile-svg {
+        width: 70px;
+        height: 70px;
+    }
+}

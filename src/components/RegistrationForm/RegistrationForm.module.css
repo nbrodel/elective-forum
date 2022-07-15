@@ -1,0 +1,48 @@
+.authorization__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.authorization__header-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.authorization__header-redirect {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.authorization__header-redirect.dark {
+    color: white;
+}
+
+.authorization__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .authorization__header-title {
+        font-size: 24px;
+    }
+
+    .authorization__header-redirect {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .authorization__header-title {
+        font-size: 20px;
+    }
+
+    .authorization__header-redirect {
+        font-size: 12px;
+    }
+}

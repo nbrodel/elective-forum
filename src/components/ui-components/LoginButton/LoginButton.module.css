@@ -1,0 +1,32 @@
+.button {
+    width: 100%;
+    min-height: 45px;
+    margin-top: 40px;
+
+    background-color: black;
+    border: 0;
+    border-radius: 4px;
+
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+    transition: 0.7s;
+}
+
+.button.dark {
+    background-color: white;
+    color: black;
+}
+
+.button:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+}
+
+.button.dark:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+}

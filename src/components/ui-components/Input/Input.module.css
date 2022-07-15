@@ -1,0 +1,51 @@
+.input__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.input {
+    padding: 12px;
+
+    font-size: 16px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 3px;
+}
+
+.error {
+    color: tomato;
+    font-size: 14px;
+}
+
+.input.dark {
+    border-color: white;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 14px;
+    }
+
+    .input {
+        font-size: 12px;
+    }
+}
