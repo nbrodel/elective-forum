@@ -1,4 +1,4 @@
 ﻿# elective-forum project
 
-[!NOTE]
-Information note
+> [!NOTE]
+> Information note
